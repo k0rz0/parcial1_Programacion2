@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="co.edu.uniquindio.parcial1fx.parcial1fx.controller.TransportadoraController" prefHeight="427.0" prefWidth="653.0">
+    <children>
+        <Label layoutX="259.0" layoutY="14.0" text="CREACIÓN DE PERSONAJE" />
+        <Label layoutX="87.0" layoutY="69.0" text="Nombre:" />
+        <Label layoutX="87.0" layoutY="116.0" text="Raza:" />
+        <Label layoutX="87.0" layoutY="161.0" text="Peinado:" />
+        <Label layoutX="342.0" layoutY="69.0" text="Genero:" />
+        <Label layoutX="342.0" layoutY="116.0" text="Edad:" />
+        <Label layoutX="342.0" layoutY="161.0" text="Accesorio:" />
+        <TextField fx:id="txtNombre" layoutX="155.0" layoutY="65.0" />
+        <TextField fx:id="txtRaza" layoutX="155.0" layoutY="112.0" />
+        <TextField fx:id="txtTipoPeinado" layoutX="155.0" layoutY="157.0" />
+        <TextField fx:id="txtGenero" layoutX="412.0" layoutY="65.0" />
+        <TextField fx:id="txtEdad" layoutX="412.0" layoutY="112.0" />
+        <TextField fx:id="txtAccesorio" layoutX="412.0" layoutY="157.0" />
+        <Button layoutX="270.0" layoutY="210.0" mnemonicParsing="false" onAction="#onAgregarPersonaje" text="Agregar personaje" />
+        <Separator layoutX="7.0" layoutY="45.0" prefHeight="0.0" prefWidth="645.0" />
+        <Separator layoutX="7.0" layoutY="198.0" prefHeight="0.0" prefWidth="645.0" />
+        <Separator layoutX="8.0" layoutY="247.0" prefHeight="0.0" prefWidth="645.0" />
+        <TextArea fx:id="txtResultado" layoutX="12.0" layoutY="315.0" prefHeight="98.0" prefWidth="630.0" />
+        <RadioButton fx:id="rbEstandar" layoutX="128.0" layoutY="273.0" mnemonicParsing="false" selected="true" text="Estándar">
+            <toggleGroup>
+                <ToggleGroup fx:id="nivel" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="rbPremiun" layoutX="288.0" layoutY="273.0" mnemonicParsing="false" text="Premium" toggleGroup="$nivel" />
+        <RadioButton fx:id="rbVip" layoutX="439.0" layoutY="273.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="87.0" text="VIP" toggleGroup="$nivel" />
+    </children>
+</AnchorPane>
+
+
