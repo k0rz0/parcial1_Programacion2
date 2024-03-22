@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="591.0" prefWidth="544.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="co.edu.uniquindio.parcial1fx.parcial1fx.controller.PropietarioController">
+    <TabPane prefHeight="401.0" prefWidth="542.0" tabClosingPolicy="UNAVAILABLE">
+    <tabs>
+    <Tab text="Propietario">
+        <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="535.0" prefWidth="542.0">
+                <children>
+                    <Label layoutX="153.0" layoutY="77.0" text="Nombre:" />
+                    <Label layoutX="169.0" layoutY="124.0" text="Email:" />
+                    <Label layoutX="164.0" layoutY="171.0" text="Cedula:" />
+                    <Label layoutX="164.0" layoutY="218.0" text="Celular:" />
+                    <TextField fx:id="txtNombrePropietario" layoutX="236.0" layoutY="73.0" />
+                    <TextField fx:id="txtEmailPropietario" layoutX="236.0" layoutY="120.0" />
+                    <TextField fx:id="txtCedulaPropietario" layoutX="237.0" layoutY="167.0" />
+                    <TextField fx:id="txtCelularPropietario" layoutX="237.0" layoutY="214.0" />
+                    <Button fx:id="btnAgregarPropietario" layoutX="138.0" layoutY="267.0" mnemonicParsing="false" onAction="#onAgregarPropietario" text="Agregar Propietario" />
+                    <Separator layoutX="3.0" layoutY="45.0" prefHeight="0.0" prefWidth="536.0" />
+                    <Separator layoutX="4.0" layoutY="256.0" prefHeight="0.0" prefWidth="542.0" />
+                    <Label layoutX="238.0" layoutY="14.0" text="PROPIETARIO" />
+                     <Button fx:id="btnActualizarPropietario" layoutX="283.0" layoutY="267.0" mnemonicParsing="false" onAction="#onActualizarPropietario" text="Actualizar Propietario" />
+                </children>
+            </AnchorPane>
+        </content>
+    </Tab>
+    </tabs>
+    </TabPane>
+   <TableView fx:id="tablePropietarios" layoutX="15.0" layoutY="336.0" prefHeight="200.0" prefWidth="514.0">
+     <columns>
+       <TableColumn fx:id="colNombre" prefWidth="97.0" text="Nombre" />
+       <TableColumn fx:id="colEmail" prefWidth="132.0" text="Email" />
+         <TableColumn fx:id="colCedula" prefWidth="136.0" text="Cedula" />
+         <TableColumn fx:id="colCelular" prefWidth="148.0" text="Celular" />
+     </columns>
+   </TableView>
+   <Button fx:id="btnEliminarPropietario" layoutX="413.0" layoutY="552.0" mnemonicParsing="false" onAction="#onEliminarPropietario" text="EliminarPropietario" />
+   <TextField fx:id="txtFiltrar" layoutX="23.0" layoutY="552.0" />
+   <Button fx:id="btnFiltrar" layoutX="191.0" layoutY="552.0" mnemonicParsing="false" onAction="#onFiltrar" text="Filtrar" />
+</AnchorPane>

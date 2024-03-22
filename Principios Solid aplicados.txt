@@ -1,0 +1,8 @@
+Principios Solid aplicados
+
+1. Unica responsabilidad
+	Este principio se aplica en todo el proyecto ya que tanto las clases como metodos que se añadidos con una unica responsabilidad.
+
+2. Abierto cerrado
+
+	Este principio lo podemos evidenciar en las clases de VehiculoCarga y VehiculoTransporte ya que heredan de la clase padre Vehiculo. Peromitiendo su extensión mas no su modificación

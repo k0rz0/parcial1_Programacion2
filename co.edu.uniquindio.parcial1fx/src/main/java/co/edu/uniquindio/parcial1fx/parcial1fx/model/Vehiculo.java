@@ -1,5 +1,8 @@
 package co.edu.uniquindio.parcial1fx.parcial1fx.model;
 
+import co.edu.uniquindio.parcial1fx.parcial1fx.model.builder.VehiculoBuilder;
+import co.edu.uniquindio.parcial1fx.parcial1fx.model.builder.VehiculoCargaBuilder;
+
 public class Vehiculo {
 
     private String placa;
@@ -7,7 +10,15 @@ public class Vehiculo {
     private String marca;
     private String color;
 
-    public Vehiculo() {
+    public Vehiculo(String placa, String modelo, String marca, String color) {
+        this.placa = placa;
+        this.modelo = modelo;
+        this.marca = marca;
+        this.color = color;
+    }
+
+    public static VehiculoBuilder builder(){
+        return new VehiculoBuilder();
     }
 
     public String getPlaca() {
